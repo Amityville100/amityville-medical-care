@@ -78,7 +78,7 @@ const handleSubmit = async (e: React.FormEvent) => {
   const services = [
     'Annual Physical Examinations',
     'Preventative Visits',
-    'Urgent Visits & Acute Care',
+    'Urgent Visits & Walk ins',
     'Wellness Visits',
     'Cardiology Care',
     'In-House Ultrasounds',
@@ -111,7 +111,7 @@ const handleSubmit = async (e: React.FormEvent) => {
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-6 py-3 text-sm md:flex-row">
           <div className="flex flex-wrap items-center gap-6 text-slate-600">
             <span>631-264-1800 | 516-243-9777</span>
-            <span>amcbethpage@gmail.com</span>
+            <span>staff@amityvillemedicalcare.com</span>
             <span>Mon – Sat | 9AM – 5PM</span>
           </div>
 
@@ -179,7 +179,12 @@ const handleSubmit = async (e: React.FormEvent) => {
         </div>
 
         <div className="relative mx-auto grid max-w-7xl gap-16 px-6 py-24 lg:grid-cols-[1fr_0.95fr] lg:items-center">
-          <div>
+          <motion.div
+  initial={{ opacity: 0, y: 40 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8 }}
+>
+        
             <div className="mb-10 inline-flex rounded-full border border-[#d9c8ef] bg-[#f3ebff]/80 px-6 py-3 text-base font-medium text-[#6A1B9A] backdrop-blur-md">
               Compassionate Healthcare Across Long Island
             </div>
@@ -206,7 +211,9 @@ const handleSubmit = async (e: React.FormEvent) => {
                 Call: 631-264-1800 | 516-243-9777
               </button>
             </div>
-          </div>
+            <div>
+           </div>
+          </motion.div>
 
           <div>
             <div className="rounded-[2.5rem] border border-white/20 bg-[#6F1AB6]/20 p-8 shadow-[0_8px_40px_rgba(91,14,110,0.35)] backdrop-blur-xl">
@@ -478,7 +485,7 @@ const handleSubmit = async (e: React.FormEvent) => {
             </h4>
 
             <p className="mt-5 leading-8 text-slate-600">
-              Luxury family medicine and cardiology care serving Long Island communities.
+              Best family medicine and cardiology care serving Long Island communities.
             </p>
           </div>
 
@@ -502,8 +509,8 @@ const handleSubmit = async (e: React.FormEvent) => {
 
             <ul className="mt-5 space-y-3 text-slate-600">
               <li>631-264-1800</li>
-              <li>amcbethpage@gmail.com</li>
-              <li>Mon – Fri | 9AM – 5PM</li>
+              <li>staff@amityvillemedicalcare.com</li>
+              <li>Mon – Sat | 9AM – 5PM</li>
             </ul>
           </div>
 
